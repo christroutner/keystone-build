@@ -7,6 +7,15 @@ var express = require('express');
 var app = express();
 var port = 3000;
 
+var keystone = require('keystone'),
+    serve = require('serve-static'),
+    favicon = require('serve-favicon'),
+    body = require('body-parser'),
+    cookieParser = require('cookie-parser'),
+    multer = require('multer');
+
+var cookieSecret = 'secretCookie';
+
 /*
  * Use Handlebars for templating
  */
