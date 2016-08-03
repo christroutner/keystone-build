@@ -31,8 +31,8 @@ app.use(body.json());
 app.use(multer());
 
 keystone.init({
-  'name': 'Website Name',
-  'brand': 'Website Brand',
+  'name': 'keystone-build',
+  'brand': 'keystone-build',
   'session': false,
   'updates': 'updates',
   'auth': true,
