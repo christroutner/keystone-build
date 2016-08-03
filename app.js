@@ -31,8 +31,8 @@ app.use(body.json());
 app.use(multer());
 
 keystone.init({
-  'name': 'keystone-build',
-  'brand': 'keystone-build',
+  'name': 'keystone4',
+  'brand': 'keystone4',
   'session': false,
   'updates': 'updates',
   'auth': true,
@@ -45,7 +45,7 @@ keystone.init({
 keystone.import('models');
 
 // Serve your static assets
-app.use(serve('./public'));
+app.use(serve('./assets'));
 
 
 
