@@ -52,7 +52,7 @@ keystone.import('models');
 // Serve your static assets
 app.use(serve('./assets'));
 
-
+/*
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/test');
 
@@ -68,7 +68,7 @@ kitty.save(function (err) {
 });
 
 console.log('Finished executing mongoose code')
-
+*/
 
 /*
  * Config for Production and Development
@@ -122,7 +122,7 @@ app.get('/', function(req, res, next) {
   res.send('hello world');
 });
 keystone.app = app;
-//keystone.start();
+keystone.start();
 
 
 /*
