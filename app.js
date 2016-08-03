@@ -1,5 +1,9 @@
 'use strict';
 
+// Simulate config options from your production environment by
+// customising the .env file in your project's root folder.
+require('dotenv').load();
+
 /*
  * Express Dependencies
  */
@@ -29,6 +33,9 @@ app.use(cookieParser(cookieSecret));
 app.use(body.urlencoded({ extended: true }));
 app.use(body.json());
 app.use(multer());
+
+
+ 
 
 /*
  * Config for Production and Development
