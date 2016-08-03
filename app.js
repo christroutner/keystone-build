@@ -116,6 +116,8 @@ app.set('view engine', 'handlebars');
 //});
 
 
+keystone.set('mongo', 'mongodb://localhost:27017/keystone4');
+
 
 // This is where your normal routes and files are handled
 app.get('/', function(req, res, next) {
