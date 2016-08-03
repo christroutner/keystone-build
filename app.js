@@ -25,6 +25,11 @@ var hbs;
 // For gzip compression
 app.use(express.compress());
 
+app.use(cookieParser(cookieSecret));
+app.use(body.urlencoded({ extended: true }));
+app.use(body.json());
+app.use(multer());
+
 /*
  * Config for Production and Development
  */
