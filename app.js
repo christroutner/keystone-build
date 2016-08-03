@@ -1,5 +1,10 @@
 'use strict';
 
+// Simulate config options from your production environment by
+// customising the .env file in your project's root folder.
+require('dotenv').load();
+
+
 /*
  * Express Dependencies
  */
