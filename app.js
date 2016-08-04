@@ -37,7 +37,7 @@ keystone.init({
   'updates': 'updates',
   'auth': true,
   'user model': 'User',
-  'auto update': true,
+  'auto update': false,
   'cookie secret': cookieSecret
 });
  
